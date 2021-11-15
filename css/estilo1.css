@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background-color:#980863;
+}
+
+main{
+	font-family: 'Josefin Sans', sans-serif;
+	min-height: 100%; 
+	width: 90%;
+	margin: auto;
+	background-color: #FEDAE2;
+}
+
+.grid_container{
+	display: grid;
+	grid-template: 
+	"header    header    header" 100px
+	"sectiona  sectiona  sidebar" auto
+	"sectiona  sectiona  sidebar" auto
+	"footer    footer    footer" 70px /
+	auto  auto;
+}
+
+.grid_container_ideas{
+	display: grid;
+	grid-template: 
+	"header    header    header" 100px
+	"sectionideas  sectionideas  sectionideas" auto
+	"sectionideas_b  sectionideas_b sectionideas_b" auto
+	"footer    footer    footer" 70px;
+
+}
+
+.header{
+	grid-area: header;
+	background-color: #D90C8D;
+}
+
+.sectiona{
+	grid-area: sectiona ;
+	background-color:;
+
+}
+
+.sidebar{
+	grid-area: sidebar;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #D90C8D;
+}
+
+/*Menu mobile*/
+
+.nav_mobile {
+  display:none;
+  width: 100%;
+  max-width: 992px;
+  padding-left: 14%;
+}
+
+.nav-menu-item_mobile{
+  font-size: 25px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+/*Menu*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #FC9CB5;
+  transition: 0.5s;
+}
+
+/* TOGGLE */
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+
+#articlemarca{
+	background-color: #D90C8D;
+	width: 30%;
+	height: 90%;
+	float:left;
+	padding-left: 2%;
+	padding-top: 1%;
+}
+
+
+
+#texto{
+	width: 400px;
+	height: 300px;
+	background-color: #E66BAB;
+	margin-top: 8%;
+	margin-left: 8%;
+	margin-bottom: 2%;
+	padding: 6% 6% 4% 4%;
+	border-radius: 4%;
+
+	 -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
+}
+
+#texto:hover{
+  background-color: #fc0094;
+  cursor: pointer;
+}
+
+#rosamobile{
+	display: none;
+	margin: 1% auto 10% 15%;
+	height: 300px;
+	width: 300px;
+}
+
+#boxfooter_a{
+	background-color: #D90C8D;
+	width: 30%;
+	height: 80%;
+	float:left;
+	padding-left: 2%;
+	padding-top: 1%;
+}
+
+#boxfooter_b{
+	background-color: #D90C8D;
+	width: 30%;
+	height: 80%;
+	float:left;
+	margin-left: 5%;
+	padding-left: 8%;
+	padding-top: 1%;
+}
+
+#boxfooter_c{
+	background-color: #D90C8D;
+	width: 30%;
+	height: 80%;
+	float:right;
+    padding-left: 16%;
+    padding-top: 1.5%;
+}
+
+#debesabianca{
+	text-decoration: none;
+	color: #ecf0f1;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+}
+
+#fondob{
+	background-image: url(../img/fondoindex.png);
+	background-size: cover;
+}
+
+#fondomobile{
+	background-image: url(../img/fondomobile.jpg);
+	width: 100%;
+	height: 320px;
+	display: none;
+}
+
+.tituloindex{
+	font-size: 32px;
+	font-weight: bold;
+	color: #79F1D6;
+	text-shadow: 2px 8px 15px #ccfdff;
+
+}
+
+.parrafoindex{
+	font-size: 18px;
+}
+
+#articlerosa_index{
+height: 580px;
+width: 50%;
+margin-left: 20%;
+}
+
+#rosa{
+ transition: all 0.5s ease;
+ margin-top: 30%;
+}
+
+#rosa:hover{
+	transform: scale(1.2, 1.2);
+}
+
+.section_fiestas{
+	grid-area: sectiona ;
+	background-color:#FEDAE2;
+
+}
+
+#articlefiestas{
+	width: 900px;
+	height: auto;
+	background-color: #FEDAE2;
+	margin-left: 2%;
+}
+
+#articlefiestas_titulo{
+	width: 300px;
+	height: 80px;
+	background-color: #FEDAE2;
+	padding-top: 5%;
+	padding-left: 4%;
+}
+
+#articlefiestas_b{
+	width: 100%;
+	height: 90%;
+	background-color: #FEDAE2;
+	padding-left: 15%;
+	padding-top: 37%;
+}
+
+#pebbles{
+	width: 90%;
+	height: 25%;
+	margin-left: 2%;
+	transition: all 0.5s ease;
+}
+
+#pebbles:hover{
+	transform: scale(1.2, 1.2);
+}
+
+.sectionideas{
+	grid-area: sectionideas ;
+	background-color:#FEDAE2;
+}
+
+.sectionideas_b{
+	grid-area: sectionideas_b ;
+	background-color:#FEDAE2;
+}
+
+#articleideas{
+	width: 98%;
+	height: 360px;
+	background-color: #FEDAE2;
+	margin: 1% 1% 1% 1%;
+	padding: 3% 1% 1% 2%;
+}
+
+#articleideas_b{
+	width: 50%;
+	height: 90%;
+	background-color: #FEDAE2;
+	float:left;
+	padding: 0% 2% 2% 3%;
+}
+
+#articleideas_c{
+	width: 50%;
+	height: 400px;
+	background-color: #FEDAE2;
+	float:right;
+	padding: 4% 1% 1% 1%;
+	margin-bottom: 2%;
+}
+
+#article_imagenes_ideas{
+	width: 100%;
+	height: auto;
+}
+
+.img_ideas{
+	margin-right: 15px;
+	margin-bottom: 12px;
+	height:166px;
+	width:272px;
+}
+
+
+.img_ideas:hover{
+-webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        }
+
+#img_ideas_tablet{
+	display: none;
+	width: 98%;
+	height: 50%;
+}
+
+
+.img_ideas_t{
+	margin-right: 15px;
+	margin-bottom: 12px;
+	height:132px;
+	width:218px;
+}
+
+
+#sadieimg:hover{
+box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+#columnasdiv{
+	width: 100%;
+	height: 30%;
+	background-color:#FEDAE2; 
+	padding-right: 1%;
+	padding-top: 1%;
+}
+
+.columnas{
+	column-count: 4;
+	column-gap: 12px;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.columnas_tablet{display: none;}
+
+#titulo_mobile_ideas{
+	display: none;
+	margin-top: 3%;
+	margin-bottom: 2%; 
+
+}
+
+.sectionequipo{
+	grid-area: sectiona;
+	background-color:#FEDAE2;
+}
+
+.sectionequipo_b{
+	grid-area: sidebar ;
+	background-color:#FEDAE2;
+	}
+
+#rosaequipo{
+	width:auto;
+	height:auto;
+	background-color:#FEDAE2;
+	float:left;
+	padding: 1% 1% 1% 1%;
+	margin: 0% 2% 7% 5%;
+}
+
+#rosaequipo:hover{
+	-webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+}
+
+#contactanos{
+	width:550px;
+	height:520px;
+	background-color:#FEDAE2;
+	float:left;
+	padding: 12% 1% 1% 1%;
+	margin: 1% 1% 8% 1%;
+}
+
+#formulario{
+	width:94%;
+	height: 440px;
+	background-color: #F66FB2;
+	padding-left:8%;
+	padding-top: 8%;
+	padding-right:1%;
+	 box-shadow: 0 8px 8px -4px #D90C8D;
+
+	  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
+}
+
+#formulario:hover{
+  background-color: #8FFFFC;
+  cursor: pointer;
+}
+
+
+.cajas_formulario{
+	width: 90%;
+}
+
+.btn{
+    width:50%;
+	height:50px;
+	color:#ffffff;
+	background-color:#D90C8D;
+	margin-left: 20%;
+	border-radius: 8px;
+	font-family:  'Josefin Sans', sans-serif;
+	font-size: 15px;
+}
+
+.cajota{
+ width: 90%;
+ height: 120px;
+}
+
+
+#tituloequipo{
+	width: 300px;
+	height:80px;
+	background-color: #FEDAE2;
+	padding: 8% 2% 0% 6%;
+}
+
+#equipotexto{
+	width: 90%;
+	height: 18%;
+	background-color: #FEDAE2;
+	float: left;
+	padding: 6% 6% 2% 3%;
+	margin-left: 3%;
+}
+
+#garnet{
+	width: auto;
+	height: auto;
+	background-color: #FEDAE2;
+	float:left;
+	margin-right: 7%;
+	padding: 0% 2% 2% 3%;
+	text-align: center;
+}
+
+#bismuto{
+	width: auto;
+	height: auto;
+	background-color: #FEDAE2;
+	float:left;
+	margin-right: 2%;
+	padding: 0% 2% 2% 3%;
+	text-align: center;
+	margin-bottom: 5%;
+
+}
+
+#perla{
+	width: auto;
+	height: auto;
+	background-color: #FEDAE2;
+	float:left;
+	margin-right: 2%;
+	padding: 0% 2% 2% 3%;
+	text-align: center;
+}
+
+#amatista{
+	width: auto;
+	height: auto;
+	background-color: #FEDAE2;
+	float:left;
+	margin-left: 8%;
+	margin-right: 7%;
+	padding: 0% 2% 2% 3%;
+	text-align: center;
+
+}
+
+#imgequipo{
+width: 216px;
+height:216px;
+
+}
+
+#imgequipo:hover{
+   
+  transform: rotate(30deg);
+  }
+
+
+#equipo_mobile{
+	width:auto;
+	height:auto;
+	background-color:#FEDAE2;
+	clear: both;
+	padding: 1% 1% 1% 1%;
+	margin: 0% 2% 7% 2%;
+	display: none;
+}
+
+#imgequipo_mobile{
+width: 316px;
+height:316px;
+}
+
+#imgequipo_mobile:hover{
+   
+  transform: rotate(30deg);
+  }
+
+
+.titulos{
+	font-size: 22px;
+	font-weight: bold;
+	color: #D90C8D;
+}
+
+
+
+/* Small (landscape phones, 576px and up) */
+/*Medium  (tablets, 768px and up)*/
+/*Large  (desktops, 992px and up)*/
+ /*X-Large  (large desktops, 1200px and up)*/
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 667px){
+main{min-width: 100%;}
+.grid_container{
+		grid-template: 
+		"header " 100px
+		"nav " auto
+	   "sectiona " auto
+	   "sidebar" auto
+	   "footer" 70px
+		}
+
+		 .nav_mobile{
+	grid-area: nav;
+	background-color: #D90C8D;
+	display: inherit;
+     }
+
+     .nav{display: none;}
+
+.sectiona{background-color: #D75FD7}
+.sidebar{background-color:#D75FD7}
+#texto{margin:5% auto 5% auto; height:230px; background-color: #E895EF;}
+.tituloindex{color: #812491;}
+#articlemarca{width: 50%; padding: 2% 2% 2% 26%;}
+#boxfooter_a{padding-left: 4%;}
+#boxfooter_b{width: 40%; margin-left: 0%; padding-left: 3%;}
+#boxfooter_c{padding-left: 2%; padding-top: 3%;}
+#fondomobile{display: block;}
+#rosa{display: none;}
+#rosamobile{display: block; margin-left: 22%;}
+#articlerosa_index{display: none;}
+
+
+ /* Ideas */
+ .grid_container_ideas{
+	display: grid;
+	grid-template: 
+	"header" 100px
+	"nav" auto
+	"sectionideas" auto
+	"sectionideas_b" auto
+	"footer" 70px; 
+    }   
+
+     .nav_mobile{
+	grid-area: nav;
+	background-color: #D90C8D;
+     }
+
+    #titulo_mobile_ideas{display: inherit;}
+    .img_ideas{width: 443px; height: 247px;}
+    .columnas{display: none;}
+    #sadieimg{ width: 490px; height: 265px; }
+    #articleideas{height: auto;
+    	text-align: center;}
+    #articleideas_b{text-align: center; width: 100%; padding-top: 3%; height: auto;}
+    #articleideas_c{text-align: center; width: 100%; height: auto; margin-bottom: 1%;
+    	clear:both; }
+	iframe{ width: 490px; height:330px;}
+
+
+/* Equipo */
+   #tituloequipo{text-align: center; margin-left: 18%;}
+   #equipotexto{text-align: center;}
+   #imgequipo{display: none;}
+   #amatista{display: none;}
+   #perla{display: none;}
+   #bismuto{display: none;}
+   #garnet{display: none;}
+   #equipo_mobile{display: inherit;}
+   #contactanos{padding: 5% 1% 1% 6%; margin: 0%;}
+   #rosaequipo{float:left; padding: 1% 1% 1% 1%; margin: 0% 2% 1% 5%; }
+	#equipotexto{width: 90%; height: auto;}
+	 #amatista_mobile{text-align: center;}
+   #perla_mobile{text-align: center;}
+   #bismuto_mobile{text-align: center;}
+   #garnet_mobile{text-align: center;}
+
+/* Fiestas */
+    #articlefiestas_titulo{width: auto; text-align: center;}
+    #section_fiestas {height: auto;}
+    #articlefiestas{height: auto; width: auto; margin-left: 0%;
+    	}
+	#articlefiestas_b{ height:auto; padding-left:1%; padding-top: 2%;
+	text-align: center;}
+	#pebbles{margin-left: 5%;}
+
+}
+
+
+
+/*Medium  (tablets, 768px and up)*/
+@media(min-width: 768px) and (max-width: 820px) {
+
+	/* General */ 
+     main {width: 100%;}
+	#articlemarca{ width: 40%; padding-left: 3%; padding-top: 2%;}
+	#boxfooter_a{padding-left: 3%;}
+    #boxfooter_b{padding-left: 6%;}
+    #boxfooter_c{padding-left: 9%; padding-top: 2%;}
+    #debesabianca{font-size: 18px;}
+    #logofacebook{height: 40px; width: 40px;}
+    #logoinstagram{height: 40px; width: 40px;}
+    #logoyoutube{height: 42px; width: 42px;}
+
+      /* Index */ 
+    #articlerosa_index{height: 560px; width: 200px;
+    	margin-left: 2%;}
+
+     /* Ideas */
+    .img_ideas{display: none;}
+    .columnas{display: none;}
+    .columnas_tablet{ column-count: 3; column-gap: 12px; display: inherit;
+	text-align: center; font-family: 'Josefin Sans', sans-serif;}
+    #img_ideas_tablet{display: inherit; text-align: center;}
+    #img_ideas_t{display: inherit;
+    margin-right: 2px; }
+    #sadieimg{ width: 350px; height: 168px; }
+    #articleideas{height: 300px;}
+    #columnasdiv{padding-right: 3%;}
+    #articleideas_c{width: 50%; height: 290px; margin-bottom: 1%}
+	iframe{ width: 332px; height:190px;}
+
+     /* Fiestas */
+	#section_fiestas {height: auto;}
+    #articlefiestas{height: auto; width: auto; margin-left: 0%;
+    	}
+
+    /* Equipo */
+
+    .sectionequipo{ width: 384px; }
+    .sectionequipo_b{ width: 384px; }
+    #equipotexto{ width: auto; height: auto; float: left;
+	padding: 6% 6% 2% 3%; margin-left: 2%;}
+    #rosaequipo{width:auto; margin: 0% 2% 2% 2%;}
+    #rosa_equipo_img{ width:100%; height: 100%; }
+    #contactanos{ width:100%; height:auto;margin: 1% 1% 8% 1%;}
+    #formulario{ width:94%; height: 400px;}
+	#garnet{ width: auto; height: auto; margin-left: 4%;
+	padding: 0% 2% 2% 3%;}
+    #bismuto{ width: auto; height: auto; clear: both;
+	margin: 5% 2% 4% 4%;}
+	#perla{ width: auto; height: auto; clear: both;
+	margin: 5% 2% 4% 4%; }
+    #amatista{ width: auto; height: auto;
+	 float:left; margin: 5% 2% 2% 4%; }
+    #imgequipo{ width: 262px; height:262px;}
+
+
+}
+
+
+
+
+/*Large  (desktops, 992px and up)*/
+@media(min-width: 992px) and (max-width: 1100px) {
+
+	.grid_container{
+	display: grid;
+	grid-template: 
+	"header    header    header" 100px
+	"sectiona  sectiona  sidebar" auto
+	"sectiona  sectiona  sidebar" auto
+	"footer    footer    footer" 70px /
+	auto  auto;
+    }
+
+
+
+
+    /* General */ 
+     main {width: 100%;}
+	#articlemarca{ width: 40%; padding-left: 3%; padding-top: 2%;}
+	#boxfooter_a{padding-left: 3%;}
+    #boxfooter_b{padding-left: 8%;}
+    #boxfooter_c{padding-left: 14%; padding-top: 2%;}
+    #debesabianca{font-size: 18px;}
+    #logofacebook{height: 40px; width: 40px;}
+    #logoinstagram{height: 40px; width: 40px;}
+    #logoyoutube{height: 42px; width: 42px;}
+    
+     /* Index */ 
+     #texto{ width: 360px; height: 250px; margin-top: 15%;}
+    .parrafoindex{ font-size: 16px; }
+    .tituloindex{ font-size: 29px;}
+    #articlerosa_index{height: 560px;}
+
+     /* Ideas */
+     #article_imagenes_ideas{text-align: center;}
+    .img_ideas{ margin-right: 15px; margin-bottom: 12px; 
+     height:115px; width:212px; }
+    #sadieimg{ width: 425px; height: 213px; }
+    #articleideas{height: 300px;}
+    #columnasdiv{padding-right: 3%;}
+    #articleideas_c{width: 50%; height: 350px; margin-bottom: 1%;}
+	iframe{ width: 442px; height:241px;}
+
+	/* Equipo*/
+
+   .sectionequipo{ width: 496px; padding-left: 5%;}
+    .sectionequipo_b{ width: 496px; }
+    #equipotexto{ width: auto; height: auto; float: left;
+	padding: 6% 6% 2% 3%; margin-left: 2%;}
+    #rosaequipo{width:auto; margin: 0% 2% 2% 2%;}
+    #rosa_equipo_img{ width:100%; height: 100%; }
+    #contactanos{ width:100%; height:auto; margin: 1% 0% 8% 1%;}
+    #formulario{ width:94%; height: 430px;}
+    #imgequipo{ width: 200px; height:200px;}
+    #amatista{margin-left:0%; margin-top: 8%; margin-right: 2%;}
+    #perla{margin-right: 0%; margin-top: 8%;}
+    #garnet{margin-right: 0%;}
+
+    /* Fiestas*/
+    #articlefiestas{width: 750px;}
+	#articlefiestas_b{padding-left: 6%; margin-top: 10%;}
+    
+    }
+
+
+ /*X-Large  (large desktops, 1200px and up)*/
+    @media(min-width: 1200px) and (max-width: 1250px) {
+    
+    /* General */ 
+     main {width: 100%;}
+     #boxfooter_c{padding-left: 15%; padding-top: 2%;}
+     #boxfooter_b{padding-left: 6%;}
+
+      /* Ideas */
+      #article_imagenes_ideas{text-align: center;}
+    #articleideas{height: 370px;}
+    .img_ideas{ margin-right: 15px; margin-bottom: 12px; 
+     height:165px; width:260px; }
+    #sadieimg{ width: 530px; height: 285px; }
+    #columnasdiv{padding-right: 0%;}
+   
+	
+	/* Equipo*/
+   .sectionequipo{
+	grid-area: sectiona;  width: 600px;
+	padding-left: 2%; }
+    #contactanos{ margin-left: auto; margin-right: auto;}
+    #formulario{width: 100%;}
+	#amatista{margin-left: 1%; margin-right: 8%;}
+	#garnet{margin-left: 1%; margin-right: 10%;}
+
+    }
+
+
